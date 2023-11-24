@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/CommitmentDiscountType",
+  "title": "Commitment Discount Type",
+  "description": "A provider-assigned identifier for the type of commitment-based discount applied to the row.",
+  "type": ["string", "null"]
+}

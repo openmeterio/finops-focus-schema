@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/CommitmentDiscountName",
+  "title": "Commitment Discount Name",
+  "description": "The display name assigned to a commitment-based discount.",
+  "type": ["string", "null"]
+}

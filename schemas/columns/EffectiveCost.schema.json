@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/EffectiveCost",
+  "title": "Effective Cost",
+  "description": "Cost inclusive of the impacts of all reduced rates and discounts, augmented with the amortization of relevant purchases (one-time or recurring) paid to cover future eligible charges.",
+  "$ref": "../formats/NumericFormat"
+}

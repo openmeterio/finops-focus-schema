@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ChargeCategory",
+  "title": "Charge Category",
+  "description": "Indicates whether the row represents an upfront or recurring fee, cost of usage that already occurred, an after-the-fact adjustment (e.g., credits), or taxes.",
+  "type": "string",
+  "oneOf": [
+    {
+      "const": "Adjustment",
+      "description": "Any adjustments that are applied after the original usage or purchase row. Adjustments may be related to multiple charges."
+    },
+    {
+      "const": "Purchase",
+      "description": "Charges for the acquisition of a service or resource bought upfront or on a recurring basis."
+    },
+    {
+      "const": "Tax",
+      "description": "Applicable taxes that are levied by the relevant authorities. Tax charges may vary depending on factors such as the location, jurisdiction, and local or federal regulations."
+    },
+    {
+      "const": "Usage",
+      "description": "Charges based on the quantity of a service or resource that was consumed over a given period of time."
+    }
+  ]
+}

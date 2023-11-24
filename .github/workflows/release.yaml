@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-dev.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+'
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+          cache-dependency-path: './pnpm-lock.yaml'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Generate bundled schemas
+        run: pnpm run bundle
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          artifacts: 'schemas/bundled/*.schema.{json,yaml}'

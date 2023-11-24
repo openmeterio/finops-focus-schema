@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/1.0-rc.1",
+  "title": "FinOps Open Cost and Usage Specification (FOCUS)",
+  "description": "v1.0-Preview Candidate Release",
+  "type": "object",
+  "properties": {
+    "AvailabilityZone": {
+      "$ref": "columns/AvailabilityZone"
+    },
+    "BilledCost": {
+      "$ref": "columns/BilledCost"
+    },
+    "BillingAccountId": {
+      "$ref": "columns/BillingAccountId"
+    },
+    "BillingAccountName": {
+      "$ref": "columns/BillingAccountName"
+    },
+    "BillingCurrency": {
+      "$ref": "columns/BillingCurrency"
+    },
+    "BillingPeriodEnd": {
+      "$ref": "columns/BillingPeriodEnd"
+    },
+    "BillingPeriodStart": {
+      "$ref": "columns/BillingPeriodStart"
+    },
+    "ChargeCategory": {
+      "$ref": "columns/ChargeCategory"
+    },
+    "ChargeDescription": {
+      "$ref": "columns/ChargeDescription"
+    },
+    "ChargeFrequency": {
+      "$ref": "columns/ChargeFrequency"
+    },
+    "ChargePeriodEnd": {
+      "$ref": "columns/ChargePeriodEnd"
+    },
+    "ChargePeriodStart": {
+      "$ref": "columns/ChargePeriodStart"
+    },
+    "ChargeSubcategory": {
+      "$ref": "columns/ChargeSubcategory"
+    },
+    "CommitmentDiscountCategory": {
+      "$ref": "columns/CommitmentDiscountCategory"
+    },
+    "CommitmentDiscountId": {
+      "$ref": "columns/CommitmentDiscountId"
+    },
+    "CommitmentDiscountName": {
+      "$ref": "columns/CommitmentDiscountName"
+    },
+    "CommitmentDiscountType": {
+      "$ref": "columns/CommitmentDiscountType"
+    },
+    "EffectiveCost": {
+      "$ref": "columns/EffectiveCost"
+    },
+    "InvoiceIssuerName": {
+      "$ref": "columns/InvoiceIssuerName"
+    },
+    "ListCost": {
+      "$ref": "columns/ListCost"
+    },
+    "ListUnitPrice": {
+      "$ref": "columns/ListUnitPrice"
+    },
+    "PricingCategory": {
+      "$ref": "columns/PricingCategory"
+    },
+    "PricingQuantity": {
+      "$ref": "columns/PricingQuantity"
+    },
+    "PricingUnit": {
+      "$ref": "columns/PricingUnit"
+    },
+    "ProviderName": {
+      "$ref": "columns/ProviderName"
+    },
+    "PublisherName": {
+      "$ref": "columns/PublisherName"
+    },
+    "Region": {
+      "$ref": "columns/Region"
+    },
+    "ResourceId": {
+      "$ref": "columns/ResourceId"
+    },
+    "ResourceName": {
+      "$ref": "columns/ResourceName"
+    },
+    "ResourceType": {
+      "$ref": "columns/ResourceType"
+    },
+    "ServiceCategory": {
+      "$ref": "columns/ServiceCategory"
+    },
+    "ServiceName": {
+      "$ref": "columns/ServiceName"
+    },
+    "SkuId": {
+      "$ref": "columns/SkuId"
+    },
+    "SkuPriceId": {
+      "$ref": "columns/SkuPriceId"
+    },
+    "SubAccountId": {
+      "$ref": "columns/SubAccountId"
+    },
+    "SubAccountName": {
+      "$ref": "columns/SubAccountName"
+    },
+    "Tags": {
+      "$ref": "columns/Tags"
+    },
+    "UsageQuantity": {
+      "$ref": "columns/UsageQuantity"
+    },
+    "UsageUnit": {
+      "$ref": "columns/UsageUnit"
+    }
+  },
+  "propertyNames": {
+    "pattern": "^[A-Z][a-zA-Z0-9]*$"
+  },
+  "additionalProperties": {
+    "type": ["string", "number", "boolean", "null"]
+  },
+  "required": [
+    "BilledCost",
+    "BillingAccountId",
+    "BillingAccountName",
+    "BillingCurrency",
+    "BillingPeriodEnd",
+    "BillingPeriodStart",
+    "ChargeCategory",
+    "ChargeDescription",
+    "ChargeFrequency",
+    "ChargePeriodEnd",
+    "ChargePeriodStart",
+    "ChargeSubcategory",
+    "CommitmentDiscountCategory",
+    "CommitmentDiscountId",
+    "CommitmentDiscountName",
+    "EffectiveCost",
+    "InvoiceIssuerName",
+    "ListCost",
+    "ListUnitPrice",
+    "PricingCategory",
+    "PricingQuantity",
+    "PricingUnit",
+    "ProviderName",
+    "PublisherName",
+    "Region",
+    "ResourceId",
+    "ResourceName",
+    "ResourceType",
+    "ServiceCategory",
+    "ServiceName",
+    "SkuId",
+    "SkuPriceId",
+    "SubAccountId",
+    "SubAccountName",
+    "Tags",
+    "UsageQuantity",
+    "UsageUnit"
+  ]
+}

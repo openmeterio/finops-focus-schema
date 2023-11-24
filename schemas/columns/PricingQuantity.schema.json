@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/PricingQuantity",
+  "title": "Pricing Quantity",
+  "description": "The volume of a given resource or service used or purchased based on the Pricing Unit.",
+  "oneOf": [
+    {
+      "$ref": "../formats/NumericFormat"
+    },
+    {
+      "type": "null"
+    }
+  ]
+}

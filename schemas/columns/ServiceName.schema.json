@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ServiceName",
+  "title": "Service Name",
+  "description": "An offering that can be purchased from a provider (e.g., cloud virtual machine, SaaS database, professional services from a systems integrator).",
+  "type": "string"
+}

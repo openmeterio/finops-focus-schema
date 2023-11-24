@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/formats/UnitFormat",
+  "title": "Unit Format",
+  "description": "Indicates standards for expressing measurement units in columns appearing in billing data.",
+  "type": "string",
+  "pattern": "^(\\d+\\s)?[A-Z][a-zA-Z]*(?:-[A-Z][a-zA-Z]*|[\\/][A-Z][a-zA-Z]*)?(?:\\/(\\d+)\\s[A-Z][a-zA-Z]*)?$",
+  "examples": [
+    "GB",
+    "Seconds",
+    "GB-Hours",
+    "GB/Hour",
+    "1000 Tokens",
+    "Units/3 Months"
+  ]
+}

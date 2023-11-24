@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ResourceType",
+  "title": "Resource Type",
+  "description": "The kind of resource the charge applies to.",
+  "type": ["string", "null"]
+}

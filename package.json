@@ -1,0 +1,36 @@
+{
+  "name": "@openmeter/finops-focus",
+  "version": "0.0.1",
+  "description": "JSON schemas and tools for the FinOps Foundation's Open Cost and Usage Specification (FOCUS)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmeterio/finops-focus-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openmeterio/finops-focus-schema/issues"
+  },
+  "homepage": "https://github.com/openmeterio/finops-focus-schema#readme",
+  "keywords": [
+    "FinOps",
+    "FOCUS",
+    "cost",
+    "usage",
+    "schema"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node . bundle && prettier --write ./schemas/bundled",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hyperjump/json-schema": "1.6.5",
+    "commander": "11.1.0",
+    "yaml": "2.3.4"
+  },
+  "devDependencies": {
+    "prettier": "3.1.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/formats/NumericFormat",
+  "title": "Numeric Format",
+  "description": "Rules and formatting requirements for numeric columns appearing in billing data.",
+  "type": ["number", "string"],
+  "pattern": "^(?:-?[0-9]+(?:\\.[0-9]+)?(?:[Ee]-?[0-9]+)?)$"
+}

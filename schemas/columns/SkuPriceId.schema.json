@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/SkuPriceId",
+  "title": "SKU Price ID",
+  "description": "Unique identifier that defines the unit price used to calculate the charge.",
+  "type": ["string", "null"]
+}

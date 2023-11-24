@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/PricingCategory",
+  "title": "Pricing Category",
+  "description": "Describes the pricing model used for a charge at the time of use or purchase.",
+  "type": ["string", "null"],
+  "oneOf": [
+    {
+      "const": "On-Demand",
+      "description": "Charges priced at the standard rate for the billing account. This includes any flat rate and volume/tiered pricing but does not include dynamic or commitment-based discount pricing."
+    },
+    {
+      "const": "Dynamic",
+      "description": "Charges priced at a variable rate determined by the provider. This includes any product or service with a unit price the provider can change without notice, like interruptible or low priority resources."
+    },
+    {
+      "const": "Commitment-Based",
+      "description": "Charges with reduced prices due to a commitment-based discount specified by the Commitment Discount ID."
+    },
+    {
+      "const": "Other",
+      "description": "Charges priced in a way not covered by another pricing category."
+    },
+    {
+      "const": null
+    }
+  ]
+}

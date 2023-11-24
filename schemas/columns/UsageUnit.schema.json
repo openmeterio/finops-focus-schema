@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/UsageUnit",
+  "title": "Usage Unit",
+  "description": "Units of a given resource or service used or purchased in combination with Usage Quantity.",
+  "oneOf": [
+    {
+      "$ref": "../formats/UnitFormat"
+    },
+    {
+      "type": "null"
+    }
+  ]
+}

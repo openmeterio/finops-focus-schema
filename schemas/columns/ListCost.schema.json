@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ListCost",
+  "title": "List Cost",
+  "description": "Cost calculated by multiplying List Unit Price and the corresponding Pricing Quantity.",
+  "$ref": "../formats/NumericFormat"
+}

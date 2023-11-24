@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ServiceCategory",
+  "title": "Service Category",
+  "description": "Highest-level classification of a service based on the core function of the service.",
+  "type": "string",
+  "oneOf": [
+    {
+      "const": "AI and Machine Learning",
+      "description": "Artificial Intelligence and Machine Learning related technologies."
+    },
+    {
+      "const": "Analytics",
+      "description": "Data processing, analytics, and visualization capabilities."
+    },
+    {
+      "const": "Business Applications",
+      "description": "Business and productivity applications and services."
+    },
+    {
+      "const": "Compute",
+      "description": "Virtual, containerized, serverless, or high-performance computing infrastructure and services."
+    },
+    {
+      "const": "Databases",
+      "description": "Database platforms and services that allow for storage and querying of data."
+    },
+    {
+      "const": "Developer Tools",
+      "description": "Software development and delivery tools and services."
+    },
+    {
+      "const": "Multicloud",
+      "description": "Support for interworking of multiple cloud and/or on-premises environments."
+    },
+    {
+      "const": "Identity",
+      "description": "Identity and access management services."
+    },
+    {
+      "const": "Integration",
+      "description": "Services that allow applications to interact with one another."
+    },
+    {
+      "const": "Internet of Things",
+      "description": "Development and management of IoT devices and networks."
+    },
+    {
+      "const": "Management and Governance",
+      "description": "Management, logging, and observability of a customer's use of cloud."
+    },
+    {
+      "const": "Media",
+      "description": "Media and entertainment streaming and processing services."
+    },
+    {
+      "const": "Migration",
+      "description": "Moving applications and data to the cloud."
+    },
+    {
+      "const": "Mobile",
+      "description": "Services enabling cloud applications to interact via mobile technologies."
+    },
+    {
+      "const": "Networking",
+      "description": "Network connectivity and management."
+    },
+    {
+      "const": "Security",
+      "description": "Security monitoring and compliance services."
+    },
+    {
+      "const": "Storage",
+      "description": "Storage services for structured or unstructured data."
+    },
+    {
+      "const": "Web",
+      "description": "Services enabling cloud applications to interact via the Internet."
+    },
+    {
+      "const": "Other",
+      "description": "New or emerging services that do not align with an existing category."
+    }
+  ]
+}

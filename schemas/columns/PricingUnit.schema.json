@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/PricingUnit",
+  "title": "Pricing Unit",
+  "description": "A provider-specified measurement unit for determining unit prices, indicating how a provider rates measured usage and purchase quantities after applying pricing rules like block pricing.",
+  "oneOf": [
+    {
+      "$ref": "../formats/UnitFormat"
+    },
+    {
+      "type": "null"
+    }
+  ]
+}

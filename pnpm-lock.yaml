@@ -1,0 +1,99 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@hyperjump/json-schema':
+    specifier: 1.6.5
+    version: 1.6.5
+  commander:
+    specifier: 11.1.0
+    version: 11.1.0
+  yaml:
+    specifier: 2.3.4
+    version: 2.3.4
+
+devDependencies:
+  prettier:
+    specifier: 3.1.0
+    version: 3.1.0
+
+packages:
+
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
+    engines: {node: '>=14'}
+    dev: false
+
+  /@hyperjump/json-pointer@1.0.1:
+    resolution: {integrity: sha512-vV2pSc7JCwbKEMzh8kr/ICZdO+UZbA3aZ7N8t7leDi9cduWKa9yoP5LS04LnsbErlPbUNHvWBFlbTaR/o/uf7A==}
+    dependencies:
+      just-curry-it: 5.3.0
+    dev: false
+
+  /@hyperjump/json-schema@1.6.5:
+    resolution: {integrity: sha512-m9Ozq32JH9yy55JH4d/coXd2KGXKIWunzJZWr6J+rTRHvpchy7bZ7SBBLxLvslGJ5yoVSRQ4bEPh1mgJCzNhqg==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@hyperjump/json-pointer': 1.0.1
+      '@hyperjump/pact': 1.2.0
+      '@hyperjump/uri': 1.2.2
+      content-type: 1.0.5
+      fastest-stable-stringify: 2.0.2
+      just-curry-it: 5.3.0
+      undici: 5.28.0
+      uuid: 9.0.1
+    dev: false
+
+  /@hyperjump/pact@1.2.0:
+    resolution: {integrity: sha512-+NirBesJkhgZMRXzza8flnh0wwIuHZ9wSYjXSNAA1KQjHtn4Nho1wi3Y5PC7izBvoPKrPFt7J+qtEUkosav+zQ==}
+    dependencies:
+      just-curry-it: 5.3.0
+    dev: false
+
+  /@hyperjump/uri@1.2.2:
+    resolution: {integrity: sha512-Zn8AZb/j54KKUCckmcOzKCSCKpIpMVBc60zYaajD8Dq/1g4UN6TfAFi+uDa5o/6rf+I+5xDZjZpdzwfuhlC0xQ==}
+    dev: false
+
+  /commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+    dev: false
+
+  /content-type@1.0.5:
+    resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
+  /fastest-stable-stringify@2.0.2:
+    resolution: {integrity: sha512-bijHueCGd0LqqNK9b5oCMHc0MluJAx0cwqASgbWMvkO01lCYgIhacVRLcaDz3QnyYIRNJRDwMb41VuT6pHJ91Q==}
+    dev: false
+
+  /just-curry-it@5.3.0:
+    resolution: {integrity: sha512-silMIRiFjUWlfaDhkgSzpuAyQ6EX/o09Eu8ZBfmFwQMbax7+LQzeIU2CBrICT6Ne4l86ITCGvUCBpCubWYy0Yw==}
+    dev: false
+
+  /prettier@3.1.0:
+    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /undici@5.28.0:
+    resolution: {integrity: sha512-gM12DkXhlAc5+/TPe60iy9P6ETgVfqTuRJ6aQ4w8RYu0MqKuXhaq3/b86GfzDQnNA3NUO6aUNdvevrKH59D0Nw==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.0
+    dev: false
+
+  /uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: false
+
+  /yaml@2.3.4:
+    resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
+    engines: {node: '>= 14'}
+    dev: false

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/ListUnitPrice",
+  "title": "List Unit Price",
+  "description": "The suggested provider-published unit price for a single Pricing Unit of the associated SKU, exclusive of any discounts.",
+  "oneOf": [
+    {
+      "$ref": "../formats/NumericFormat"
+    },
+    {
+      "type": "null"
+    }
+  ]
+}

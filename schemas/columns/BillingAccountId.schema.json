@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/BillingAccountId",
+  "title": "Billing Account ID",
+  "description": "The identifier assigned to a billing account by the provider.",
+  "type": "string"
+}

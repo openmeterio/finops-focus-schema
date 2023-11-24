@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/formats/KeyValueFormat",
+  "title": "Key-Value Format",
+  "description": "Rules and formatting requirements for columns appearing in billing data which convey data as key-value pairs.",
+  "type": ["object", "null"],
+  "additionalProperties": {
+    "type": ["string", "number", "boolean", "null"]
+  }
+}

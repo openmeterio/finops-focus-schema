@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finops.openmeter.io/schemas/columns/SubAccountId",
+  "title": "Sub Account ID",
+  "description": "An ID assigned to a grouping of resources or services, often used to manage access and/or cost.",
+  "type": ["string", "null"]
+}
